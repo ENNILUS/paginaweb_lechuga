@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interactivo de México</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="map-container">
+        <!-- Imagen del mapa de México -->
+        <img src="mapaMexico.png" alt="Mapa de México" class="mapa">
+
+        <!-- Tooltip para mostrar los nombres de los estados -->
+        <div id="tooltip" class="tooltip"></div>
+
+        <!-- Hotspots de los estados -->
+        <div class="estado" style="top: 66%; left: 42%;" onmouseover="showTooltip(event, 'Jalisco')" onmouseout="hideTooltip()"></div>
+        <div class="estado" style="top: 71%; left: 57%;" onmouseover="showTooltip(event, 'Ciudad de México')" onmouseout="hideTooltip()"></div>
+        <div class="estado" style="top: 42%; left: 55%;" onmouseover="showTooltip(event, 'Nuevo León')" onmouseout="hideTooltip()"></div>
+        <div class="estado" style="top: 73%; left: 65%;" onmouseover="showTooltip(event, 'Veracruz')" onmouseout="hideTooltip()"></div>
+        <div class="estado" style="top: 62%; left: 85%;" onmouseover="showTooltip(event, 'Yucatán')" onmouseout="hideTooltip()"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

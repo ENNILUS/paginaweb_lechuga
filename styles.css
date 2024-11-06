@@ -1,0 +1,42 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.map-container {
+    position: relative;
+    width: 80%;
+    max-width: 1875px; /* Limita el ancho al tamaño de la imagen */
+}
+
+.mapa {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.estado {
+    position: absolute;
+    width: 30px; /* Tamaño del área del hotspot */
+    height: 30px; /* Tamaño del área del hotspot */
+    background-color: rgba(0, 0, 255, 0.3); /* Azul translúcido para pruebas */
+    cursor: pointer;
+}
+
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none;
+    pointer-events: none;
+}
